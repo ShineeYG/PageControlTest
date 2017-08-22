@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.lanou.mapper.MessageMapper">
+    <resultMap id="MessageMap" type="com.lanou.bean.Message">
+        <id column="id" property="id" javaType="integer" jdbcType="INTEGER"/>
+        <result column="content" property="content" jdbcType="VARCHAR" javaType="String"/>
+        <result javaType="integer" jdbcType="INTEGER" property="up" column="up"/>
+        <result column="down" property="down" jdbcType="INTEGER" javaType="integer"/>
+    </resultMap>
+
+    <select id="showAllMessage" resultMap="MessageMap">
+        SELECT * FROM message
+    </select>
+
+
+</mapper>
