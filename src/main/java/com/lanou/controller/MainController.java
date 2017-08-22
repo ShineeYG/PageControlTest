@@ -53,7 +53,9 @@ public class MainController {
     }
 
 
-
+public void test(){
+    System.out.println("11111");
+}
 
 
 }
