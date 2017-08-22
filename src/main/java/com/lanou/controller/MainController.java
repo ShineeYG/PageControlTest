@@ -46,8 +46,16 @@ public class MainController {
                                       @RequestParam("size") Integer size) {
         System.out.println(pageNum+"+"+size);
         return messageService.queryPage(pageNum,size);
-
     }
+
+    @RequestMapping("/test")
+    @ResponseBody
+    public String newAdd() {
+        return "bbb";
+    }
+
+
+
 
 
 }
