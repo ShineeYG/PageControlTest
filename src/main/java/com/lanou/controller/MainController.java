@@ -38,8 +38,6 @@ public class MainController {
 
 
 
-
-
     @RequestMapping("/pageTest")
     @ResponseBody
     public PageInfo<Message> pageInfo(@RequestParam("pageNum") Integer pageNum,
